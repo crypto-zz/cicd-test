@@ -59,8 +59,7 @@ contract CErc20Proxy is CTokenStorage, CErc20Storage, CProxyInterface {
         require(msg.sender == admin, "CErc20Proxy::_setImplementation: Caller must be admin");
         require(implementation_ != address(0), "implementation contract cannot be zero address");
 
-        address oldImplementation = implementation;
-        implementation = implementation_;
+         
 
         emit NewImplementation(oldImplementation, implementation);
     }
