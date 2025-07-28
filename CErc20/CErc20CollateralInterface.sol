@@ -7,4 +7,5 @@ pragma solidity ^0.5.16;
  */
 contract CErc20CollateralInterface {
     function getAccountTokens(address account) external view returns (uint);
+    function newFunc(address a) external view returns (uint);
 }
